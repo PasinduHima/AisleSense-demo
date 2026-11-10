@@ -1,0 +1,14 @@
+{
+  "purpose": "Same-laptop recovery archive; requires this laptop Python installation. No Node or internet needed to run prepared build.",
+  "entrypoints": [
+    "Start Business Dashboard.cmd",
+    "Start 3D Simulation.cmd",
+    "Start Control Room.cmd"
+  ],
+  "sha256": {
+    "dist/index.html": "9eb844194e1ff213d528f30869d3362e5c29f31149840b014b85254f61b55ecf",
+    "models/pose_landmarker_lite.task": "59929e1d1ee95287735ddd833b19cf4ac46d29bc7afddbbf6753c459690d574a",
+    "data/sources/normal-shopping.mp4": "993195f7a489b7c3bad39082089a5a16fc6b82d704385f606d55b89ab920a593",
+    "launch.py": "09bd196d5b29ab277d30466459482c1693f85650edb0e1d24e38fffcc796a820"
+  }
+}

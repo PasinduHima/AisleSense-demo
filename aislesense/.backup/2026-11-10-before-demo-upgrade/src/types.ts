@@ -1,0 +1,7 @@
+export type Zone={id:string;name:string;count:number;level:number;target:number;state:string;countdown:number;override:number|null;baseline_wh:number;used_wh:number};
+export type Actor={id:string;x:number;z:number;action:string;item:boolean;bagged:boolean;heading?:number};
+export type Trace={time:number;text:string};
+export type Event={id:string;created_at:string;source:'simulation'|'video';title:string;level:number;zone:string;reason:string;status:string;clip_url:string|null;evidence:Trace[];session_id:string;decisions:{decision:string;note:string;created_at:string}[]};
+export type Settings={empty_delay:number;dim_level:number;watts_per_zone:number;overhead_watts:number};
+export type Analysis={model:string;algorithm:string;landmarks_total:number;visible_landmarks:number;body_observed:boolean;stage:string;zone_dwell_s:number;zone_threshold_s:number;wrists:{side:string;visible:boolean;shelf_dwell_s:number;bag_dwell_s:number;armed:boolean}[]};
+export type State={mode:'simulation'|'video';scenario:string;session_id:string;running:boolean;elapsed:number;stage:string;healthy:boolean;actors:Actor[];zones:Zone[];trace:Trace[];settings:Settings;video:{status:string;message:string;progress:number;fps:number;people:number;frame_url:string|null;name:string|null;rule:string;inference_ms?:number;media_time?:number;frames?:number;analysis?:Analysis|null};energy:{baseline_wh:number;used_wh:number;saved_wh:number;overhead_wh:number;net_saved_wh:number;saving_percent:number;basis:string}};

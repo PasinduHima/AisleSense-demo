@@ -1,0 +1,137 @@
+{
+  "mode": "simulation",
+  "scenario": "aisle_a2",
+  "session_id": "d3c8dc5ced",
+  "running": true,
+  "elapsed": 16.15,
+  "stage": "Camera 02: one shopper in A2 → brighten only this aisle",
+  "healthy": true,
+  "actors": [
+    {
+      "id": "S01",
+      "x": 0,
+      "z": 0,
+      "action": "standing",
+      "item": false,
+      "bagged": false
+    }
+  ],
+  "zones": [
+    {
+      "id": "A1",
+      "name": "Produce aisle",
+      "count": 0,
+      "level": 30.0,
+      "target": 30.0,
+      "empty_since": -5.0,
+      "hold_until": 0,
+      "override": null,
+      "override_until": 0,
+      "state": "Dimmed",
+      "baseline_wh": 0.269,
+      "used_wh": 0.081,
+      "countdown": 0
+    },
+    {
+      "id": "A2",
+      "name": "Everyday essentials",
+      "count": 1,
+      "level": 100,
+      "target": 100,
+      "empty_since": null,
+      "hold_until": 0,
+      "override": null,
+      "override_until": 0,
+      "state": "Occupied",
+      "baseline_wh": 0.269,
+      "used_wh": 0.269,
+      "countdown": 0
+    },
+    {
+      "id": "A3",
+      "name": "Household aisle",
+      "count": 0,
+      "level": 30.0,
+      "target": 30.0,
+      "empty_since": -5.0,
+      "hold_until": 0,
+      "override": null,
+      "override_until": 0,
+      "state": "Dimmed",
+      "baseline_wh": 0.269,
+      "used_wh": 0.081,
+      "countdown": 0
+    }
+  ],
+  "trace": [
+    {
+      "time": 0,
+      "text": "Scripted scene started; no AI inference."
+    },
+    {
+      "time": 0,
+      "text": "Lighting demonstration starts with empty aisles already dimmed."
+    }
+  ],
+  "settings": {
+    "empty_delay": 5.0,
+    "dim_level": 30.0,
+    "watts_per_zone": 60.0,
+    "overhead_watts": 15.0
+  },
+  "video": {
+    "status": "complete",
+    "message": "Recorded video finished. Lighting returns to its input-unavailable safe state.",
+    "progress": 100,
+    "fps": 5.3,
+    "people": 1,
+    "frame_url": "/api/video/frame?v=71",
+    "name": "normal-shopping.mp4",
+    "rule": "zone_entry",
+    "inference_ms": 11.7,
+    "media_time": 11.2,
+    "frames": 71,
+    "analysis": {
+      "model": "MediaPipe Pose Landmarker Lite",
+      "algorithm": "Timed region-state machine",
+      "landmarks_total": 33,
+      "visible_landmarks": 18,
+      "body_observed": true,
+      "stage": "Observation emitted",
+      "zone_dwell_s": 4.48,
+      "zone_threshold_s": 0.75,
+      "shelf_threshold_s": 0.35,
+      "bag_threshold_s": 0.35,
+      "sequence_window_s": 4,
+      "missing_reset_s": 0.8,
+      "cooldown_s": 8,
+      "wrists": [
+        {
+          "side": "left",
+          "visible": false,
+          "shelf_dwell_s": 0,
+          "bag_dwell_s": 0,
+          "armed": false
+        },
+        {
+          "side": "right",
+          "visible": true,
+          "shelf_dwell_s": 0,
+          "bag_dwell_s": 0,
+          "armed": false
+        }
+      ],
+      "observation_emitted": true,
+      "note": "Visibility is landmark observability, not theft confidence."
+    }
+  },
+  "energy": {
+    "baseline_wh": 0.8076010599994337,
+    "used_wh": 0.43072056533303116,
+    "saved_wh": 0.3768804946664025,
+    "overhead_wh": 0.06730008833328611,
+    "net_saved_wh": 0.3095804063331164,
+    "saving_percent": 46.666666666666686,
+    "basis": "Illustrative linear power model; not meter readings."
+  }
+}

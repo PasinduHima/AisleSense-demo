@@ -1,0 +1,12 @@
+{
+  "extracted_server_started": true,
+  "health": {
+    "app": "AisleSense",
+    "status": "ok",
+    "version": "0.1.0",
+    "model_cached": true
+  },
+  "built_ui_served": true,
+  "port": 8767,
+  "scope": "Same laptop; original base Python remains installed. No network-disconnected rehearsal."
+}

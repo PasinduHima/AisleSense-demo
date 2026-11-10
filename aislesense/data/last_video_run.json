@@ -1,0 +1,11 @@
+{
+  "file": "normal-shopping.mp4",
+  "rule": "occupancy",
+  "frames_processed": 71,
+  "frames_with_pose": 71,
+  "events_generated": 0,
+  "mean_inference_ms": 29.58774647895168,
+  "wall_seconds": 11.242759499989916,
+  "cancelled": false,
+  "limitation": "Presence count is not detection accuracy. No labelled concealment evaluation has been performed."
+}

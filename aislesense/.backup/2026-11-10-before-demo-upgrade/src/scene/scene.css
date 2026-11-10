@@ -1,0 +1,17 @@
+/* 3D store canvas and the simulated camera view. */
+.store-canvas{background:#16292d}
+.store-canvas .gl-view{display:block;width:100%;height:100%}
+.camera-evidence{position:relative}
+.store-canvas.cctv-canvas{position:absolute;inset:0;height:100%!important;width:100%;overflow:hidden;background:#0d1f22;touch-action:auto}
+.cctv-canvas .gl-view{cursor:default;filter:saturate(.82) contrast(1.06)}
+.cctv-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.cctv-vignette{position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse at center,transparent 58%,#020f1299 100%),repeating-linear-gradient(0deg,#ffffff07 0 1px,transparent 1px 3px)}
+.cctv-hud{position:absolute;inset:0;pointer-events:none;z-index:3;font-size:clamp(9px,1.25vw,13px);color:#e2eee6}
+.cctv-hud>span{position:absolute;background:#0c2529cc;border-radius:5px;padding:.5em .8em;line-height:1.2;letter-spacing:.03em}
+.cctv-tag{top:3%;left:2%;display:flex;align-items:center;gap:.6em;font-weight:600}
+.cctv-tag i{width:.75em;height:.75em;border-radius:50%;background:#e9b567;animation:cctvBlink 1.6s steps(2,start) infinite}
+.cctv-cam{top:3%;right:2%;font-weight:700;color:#bff5df}
+.cctv-note{bottom:3%;left:2%;max-width:72%;color:#b9d2ca;font-size:.92em}
+.cctv-clock{bottom:3%;right:2%;font-variant-numeric:tabular-nums;font-weight:600}
+@keyframes cctvBlink{to{visibility:hidden}}
+@media (prefers-reduced-motion:reduce){.cctv-tag i{animation:none}}

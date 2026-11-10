@@ -1,0 +1,10 @@
+fastapi>=0.115,<1
+uvicorn>=0.34,<1
+python-multipart>=0.0.20
+numpy>=2,<3
+opencv-contrib-python==5.0.0.93
+mediapipe==0.10.32
+imageio-ffmpeg>=0.6,<1
+requests>=2.32,<3
+pytest>=8,<10
+httpx>=0.28,<1

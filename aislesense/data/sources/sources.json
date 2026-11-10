@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Man Looking at a Product Inside a Supermarket",
+    "creator": "Kampus Production",
+    "page": "https://www.pexels.com/video/man-looking-at-a-product-inside-a-supermarket-8420776/",
+    "download": "https://videos.pexels.com/video-files/8420776/8420776-uhd_3840_2160_25fps.mp4",
+    "licence": "Pexels License",
+    "licence_url": "https://www.pexels.com/license/",
+    "retrieved": "2026-11-08",
+    "intended_use": "Ordinary shopping: pose, occupancy and neutral zone-entry tests. Not concealment or misconduct evidence.",
+    "restrictions": "Do not portray identifiable people in a bad light, imply endorsement, or redistribute as a stock service.",
+    "processing": "Downscaled to 960px, audio removed for local educational demonstration.",
+    "file": "normal-shopping.mp4",
+    "sha256": "993195f7a489b7c3bad39082089a5a16fc6b82d704385f606d55b89ab920a593",
+    "split": "development; not a held-out accuracy evaluation"
+  }
+]

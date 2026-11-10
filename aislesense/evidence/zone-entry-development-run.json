@@ -1,0 +1,11 @@
+{
+  "file": "normal-shopping.mp4",
+  "rule": "zone_entry",
+  "frames_processed": 71,
+  "frames_with_pose": 71,
+  "events_generated": 1,
+  "mean_inference_ms": 19.32662394812698,
+  "wall_seconds": 13.193686900020111,
+  "cancelled": false,
+  "limitation": "Presence count is not detection accuracy. No labelled concealment evaluation has been performed."
+}
